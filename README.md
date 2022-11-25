@@ -24,13 +24,24 @@
 - `UID_LIST_MEMBER`为需要扫描的up主uid列表，使用英文逗号分隔，必填
 - `HANDLE_DYNAMIC_TYPES`为需要处理的动态类型,目前支持:1转发动态,2图文动态,4文字动态,8投稿动态,64专栏动态
 
-(1)`dingding_config`下的参数
+(2)`dingding_config`下的参数
 - `DINGDING_PUSH_ROBOT_TOKEN`为需要推送的钉钉Webhook机器人token
 - `DINGDING_PUSH_ROBOT_SEC`为需要推送的钉钉Webhook机器人sec,选择加签模式则必填
+
+(3)`wecomchan_config`下的参数
+- `WOCOMCHAN_PUSH_ROBOT_WECOM_AID`为需要推送的企业微信应用ID
+- `WOCOMCHAN_PUSH_ROBOT_WECOM_SEC`为需要推送的企业微信应用Secret
+- `WOCOMCHAN_PUSH_ROBOT_WECOM_TID`为需要推送的企业微信推送消息的默认发送对象，默认填 @all，代表向该企业的全部成员推送
+- `WOCOMCHAN_PUSH_ROBOT_WECOM_CID`为需要推送的企业微信公司ID
+- `send_MarkDown`是否发送Markdown格式消息
+- `send_DynamicCard`是否发送类似与B站APP官方的分享图片
+- `send_ImageCard`是否发送ImageCard格式消息
 
 #### 2. 填写defines配置信息
 (1)`description`下的参数
 - 多语言下的描述文件,可根据自己需要修改,支持makedown格式
+- cn_desc为钉钉推送使用
+- wecom_desc为企业推送使用
   
 #### 3.安装第三方库
 
