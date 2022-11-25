@@ -41,7 +41,7 @@
 (1)`description`下的参数
 - 多语言下的描述文件,可根据自己需要修改,支持makedown格式
 - cn_desc为钉钉推送使用
-- wecom_desc为企业推送使用
+- wecom_desc为企业微信推送使用
   
 #### 3.安装第三方库
 
